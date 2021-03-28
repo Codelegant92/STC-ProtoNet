@@ -23,7 +23,7 @@ def train(base_loader, val_loader, model, optimization, start_epoch, stop_epoch,
     
     max_acc = 0
 
-    feature_dim = 64
+    feature_dim = 576
     num_class = 22
     mean_var = 10
     kernel_dict = loadmat('meanvar1_featuredim'+str(feature_dim)+'_class'+str(num_class)+'.mat')
