@@ -18,7 +18,7 @@ def parse_args(script):
     parser = argparse.ArgumentParser(description= 'few-shot script %s' %(script))
     parser.add_argument('--dataset'     , default='command',        help='command')
     parser.add_argument('--model'       , default='Conv4',      help='model: Conv{4|6} / ResNet{10|18|34|50|101}') # 50 and 101 are not used in the paper
-    parser.add_argument('--method'      , default='protonet',   help='protonet') #relationnet_softmax replace L2 norm with softmax to expedite training, maml_approx use first-order approximation in the gradient for efficiency
+    parser.add_argument('--method'      , default='protonet',   help='protonet') 
     parser.add_argument('--train_n_way' , default=-1, type=int,  help='class num to classify for training, random-way is -1') #baseline and baseline++ would ignore this parameter
     parser.add_argument('--test_n_way'  , default=-1, type=int,  help='class num to classify for testing (validation), random-way is -1 ') #baseline and baseline++ only use this parameter in finetuning
     parser.add_argument('--train_n_shot'      , default=-1, type=int,  help='number of labeled data in each class, same as n_support, random-shot is -1') #baseline and baseline++ only use this parameter in finetuning
