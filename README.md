@@ -39,7 +39,8 @@ filelists/
 
 ```
 ## Train and test
-1. Run `python train.py` followed by a series of arguments:
+1. Run `python craft_MMCenters.py` to generate the hard points.
+2. Run `python train.py` followed by a series of arguments:
 ```shell
 --dataset
 --model
@@ -56,3 +57,5 @@ filelists/
 --min_shot
 ...
 ```
+3. Run `python save_features.py` to generate embeddings of the testing examples of a training method by choosing the arguments.
+4. Run `python test.py` to to evaluation.
