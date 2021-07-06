@@ -58,4 +58,4 @@ filelists/
 ...
 ```
 3. Run `python save_features.py` to generate embeddings of the testing examples of a training method by choosing the arguments.
-4. Run `python test.py` to to evaluation.
+4. Run `python test.py` to do evaluation.
