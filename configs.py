@@ -1,3 +1,3 @@
-save_dir                    = './logs/CloserLookFewShot/'
+save_dir                    = './logs/STC-ProtoNet/'
 data_dir = {}
 data_dir['command']             = './filelists/'  
