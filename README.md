@@ -59,3 +59,14 @@ filelists/
 ```
 3. Run `python save_features.py` to generate embeddings of the testing examples of a training method by choosing the arguments.
 4. Run `python test.py` to do evaluation.
+
+## Cite our paper
+If the code and the work is useful to you, please cite it:
+```shell
+@inproceedings{chen2021meta,
+  title={A Meta-learning Approach for User-defined Spoken Term Classification with Varying Classes and Examples.},
+  author={Chen, Yangbin and Ko, Tom and Wang, Jianping},
+  booktitle={Proceedings of Interspeech},
+  year={2021}
+}
+```
