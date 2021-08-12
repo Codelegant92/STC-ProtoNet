@@ -12,7 +12,7 @@ for k in range (1,L):
     	mean_logits[k,j] = -(1.0/(L-1) + np.dot(mean_logits[k,:], mean_logits[j,:])) / mean_logits[j,j]
     	print(mean_logits[k,j])
     #print(k, np.linalg.norm(mean_logits[k,:])**2)
-    mean_logits[k,k] = np.sqrt(np.abs(np.linalg.norm(mean_logits[k,:])**2))
+    mean_logits[k,k] = np.sqrt(np.abs(1-np.linalg.norm(mean_logits[k,:])**2))
 
 mean_logits=mean_logits*mean_var;
 mean_logits = {'mean_logits': mean_logits, 'label': 'experiment'}
