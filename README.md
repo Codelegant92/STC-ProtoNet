@@ -1,5 +1,5 @@
 # STC-ProtoNet
-## A PyTorch Implementation of Prototypical Networks for Few-shot Spoken Term Classification with Varying Classes and Examples
+A PyTorch Implementation of Prototypical Networks for Few-shot Spoken Term Classification with Varying Classes and Examples
 
 This repository presents an extended-ProtoNet approach to address the user-defined spoken term classification task.
 
